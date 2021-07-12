@@ -1,16 +1,15 @@
 package com.myapps.core.domain.repository
 
-import androidx.lifecycle.LiveData
 import com.myapps.core.data.Resource
 import com.myapps.core.domain.model.Sport
 import kotlinx.coroutines.flow.Flow
 
 interface ISportRepository {
 
-    fun getAllsport(): Flow<Resource<List<Sport>>>
+    fun getAllSport(): Flow<Resource<List<Sport>>>
 
-    fun getFavoritesport(): Flow<List<Sport>>
+    fun getFavoriteSport(): Flow<List<Sport>>
 
-    fun setFavoritesport(sport: Sport, state: Boolean)
+    fun setFavoriteSport(sport: Sport, state: Boolean)
 
 }

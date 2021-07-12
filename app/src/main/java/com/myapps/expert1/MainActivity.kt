@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         supportFragmentManager.beginTransaction().replace(R.id.container, HomeFragment()).commit()
-        binding.bottomNavigation.selectedItemId = R.id.nav_home;
+        binding.bottomNavigation.selectedItemId = R.id.nav_home
 
         binding.bottomNavigation.setOnNavigationItemSelectedListener { item ->
             var fragment: Fragment? = null

@@ -25,8 +25,8 @@ class DetailActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        val detailsport = intent.getParcelableExtra<Sport>(EXTRA_DATA)
-        viewDetail(detailsport)
+        val detailSport = intent.getParcelableExtra<Sport>(EXTRA_DATA)
+        viewDetail(detailSport)
     }
 
     private fun viewDetail(detailSport: Sport?) {
@@ -45,7 +45,7 @@ class DetailActivity : AppCompatActivity() {
 
             binding.favorite.setOnClickListener {
                 isFavorite = !isFavorite
-                detailSportViewModel.setFavoritesport(detailSport, isFavorite)
+                detailSportViewModel.setFavoriteSport(detailSport, isFavorite)
                 setStatusFavorite(isFavorite)
             }
         }

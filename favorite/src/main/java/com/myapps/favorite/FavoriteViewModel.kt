@@ -6,6 +6,6 @@ import com.myapps.core.domain.usecase.SportUseCase
 
 class FavoriteViewModel(sportUseCase: SportUseCase) : ViewModel() {
 
-    val favoritesport = sportUseCase.getFavoritesport().asLiveData()
+    val favoriteSport = sportUseCase.getFavoriteSport().asLiveData()
 
 }

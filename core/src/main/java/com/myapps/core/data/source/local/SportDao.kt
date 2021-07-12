@@ -1,6 +1,5 @@
 package com.myapps.core.data.source.local
 
-import androidx.lifecycle.LiveData
 import androidx.room.*
 import com.myapps.core.data.source.local.entity.SportEntity
 import kotlinx.coroutines.flow.Flow
@@ -9,15 +8,15 @@ import kotlinx.coroutines.flow.Flow
 interface SportDao {
 
     @Query("SELECT * FROM sport")
-    fun getAllsports(): Flow<List<SportEntity>>
+    fun getAllSports(): Flow<List<SportEntity>>
 
     @Query("SELECT * FROM sport where isFavorite = 1")
-    fun getFavoritesports(): Flow<List<SportEntity>>
+    fun getFavoriteSports(): Flow<List<SportEntity>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertsports(sport: List<SportEntity>)
+    suspend fun insertSports(sport: List<SportEntity>)
 
     @Update
-    fun updateFavoritesports(sport: SportEntity)
+    fun updateFavoriteSports(sport: SportEntity)
 
 }

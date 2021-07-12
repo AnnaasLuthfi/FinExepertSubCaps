@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.detail.DetailActivity"
-    android:background="#FAF8F8">
+    android:background="@color/background">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardImage"
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginStart="8dp"
-        android:text="nameSport"
+        android:text="@string/name_sport"
         android:fontFamily="sans-serif-black"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,7 +67,7 @@
             android:id="@+id/type"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="nameEvent"
+            android:text="@string/name_event"
             android:textColor="@color/white"
             android:fontFamily="sans-serif-black"
             android:padding="5dp"
@@ -97,7 +97,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <TextView
                     android:id="@+id/description"
@@ -125,7 +125,7 @@
         android:layout_marginTop="45dp"
         android:background="@android:color/transparent"
         android:backgroundTint="#FFFFFF"
-        android:contentDescription="favorite"
+        android:contentDescription="@string/favorite"
         app:borderWidth="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardImage" />

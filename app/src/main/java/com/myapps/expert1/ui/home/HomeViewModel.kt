@@ -6,6 +6,6 @@ import com.myapps.core.domain.usecase.SportUseCase
 
 class HomeViewModel(sportUseCase: SportUseCase) : ViewModel() {
 
-    val sport = sportUseCase.getAllsport().asLiveData()
+    val sport = sportUseCase.getAllSport().asLiveData()
 
 }

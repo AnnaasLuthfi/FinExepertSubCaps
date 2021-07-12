@@ -32,7 +32,7 @@ class FavoriteActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        favoriteViewModel.favoritesport.observe(this, { sport ->
+        favoriteViewModel.favoriteSport.observe(this, { sport ->
             binding.empty.root.visibility = if (sport.isNotEmpty()) View.GONE else View.VISIBLE
             sportAdapter.setData(sport)
         })

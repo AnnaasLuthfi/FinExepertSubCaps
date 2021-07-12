@@ -1,6 +1,6 @@
 package com.myapps.expert1.di
 
-import com.myapps.core.domain.usecase.SportInteractor
+import com.myapps.core.domain.usecase.SportInteract
 import com.myapps.core.domain.usecase.SportUseCase
 import com.myapps.expert1.ui.detail.DetailSportViewModel
 import com.myapps.expert1.ui.home.HomeViewModel
@@ -9,7 +9,7 @@ import org.koin.dsl.module
 
 
     val useCaseModule = module {
-        factory<SportUseCase> { SportInteractor(get()) }
+        factory<SportUseCase> { SportInteract(get()) }
     }
 
     val viewModelModule = module {
