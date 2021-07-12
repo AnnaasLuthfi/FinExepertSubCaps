@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sport Center</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="image">Image</string>
+    <string name="somethings_error">Somethings Error....</string>
+    <string name="favorite_empty">favorite Empty</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="not_favorite">not favorite</string>
+</resources>
