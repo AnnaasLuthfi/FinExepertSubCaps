@@ -23,7 +23,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -37,12 +37,11 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    dynamicFeatures = [':favorite']
-
     lintOptions {
         abortOnError false
         checkReleaseBuilds false
     }
+    dynamicFeatures = [':favorite']
 }
 
 dependencies {
@@ -81,4 +80,6 @@ dependencies {
     implementation "org.koin:koin-core:$koin_version"
     implementation "org.koin:koin-android:$koin_version"
     implementation "org.koin:koin-android-viewmodel:$koin_version"
+
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.4'
 }
