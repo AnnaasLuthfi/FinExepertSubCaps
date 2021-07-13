@@ -1,8 +1,4 @@
 <resources>
-    <string name="app_name">Sport Center</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="image">Image</string>
-    <string name="somethings_error">Somethings Error....</string>
     <string name="title_favorite">Favorite</string>
     <string name="description">Description</string>
     <string name="powered_by">powered by</string>
